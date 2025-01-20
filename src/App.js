@@ -1,7 +1,7 @@
 import React from "react";
 
-const NUM_GUESSES = 5;
-const NUM_ATTEMPTS = 5;
+import GameHeader from "./components/Game/GameHeader";
+
 
 /**
  * Guess the letter app
@@ -9,16 +9,9 @@ const NUM_ATTEMPTS = 5;
  */
 
 function App() {
- 
-
   return (
-    <div className="App min-h-screen bg-gradient-to-br from-green-500 to-green-800 flex flex-col items-center justify-center text-white font-sans">
-     
-  
-    
-
-     
-    
+    <div className="App min-h-screen bg-gradient-to-br from-[#85A98F] to-[#5A6C57] md:text-2xl flex flex-col items-center justify-center text-white font-sans">
+      <GameHeader />
     </div>
   );
 }
