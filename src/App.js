@@ -2,6 +2,9 @@ import React from "react";
 
 import GameHeader from "./components/Game/GameHeader";
 import GameInput from "./components/Game/GameInput";
+import GameBoard from "./components/Game/GameBoard";
+import GameFeedback from "./components/Game/GameFeedback";
+import GameReset from "./components/Game/GameReset"
 
 /**
  * Guess the letter app
