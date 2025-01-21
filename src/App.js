@@ -1,7 +1,7 @@
 import React from "react";
 
 import GameHeader from "./components/Game/GameHeader";
-
+import GameInput from "./components/Game/GameInput";
 
 /**
  * Guess the letter app
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App min-h-screen bg-gradient-to-br from-[#85A98F] to-[#5A6C57] md:text-2xl flex flex-col items-center justify-center text-white font-sans">
       <GameHeader />
+      <GameInput />
     </div>
   );
 }
