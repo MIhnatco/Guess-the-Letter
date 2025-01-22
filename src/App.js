@@ -19,9 +19,19 @@ function App() {
   return (
     <div className="App min-h-screen bg-gradient-to-br from-[#85A98F] to-[#5A6C57] md:text-2xl flex flex-col items-center justify-center text-white font-sans">
       <GameHeader />
-      <GameInput />
+
+      <GameInput 
+        playerGuess={playerGuess}
+        handlePlayerChange={handlePlayerChange}
+        handleGuess={handleGuess}
+        isDisable={attempts === 0}
+        letter={letter}
+        setSolution={setSolution}
+      />
+
+
       <GameBoard guesses={guesses} attempts={attempts} />
-      <GameFeedback />
+      <GameFeedback solution={solution} />
       <GameReset onReset={resetGame} />
     </div>
   );
