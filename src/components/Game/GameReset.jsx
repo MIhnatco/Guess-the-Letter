@@ -10,8 +10,8 @@ import Button from "../Button";
  */
 
 
-function GameReset(){
-    return <Button>Play again</Button>
+function GameReset({onReset}){
+    return <Button onClick={onReset} color="bg-red-600">Play again</Button>
 }
 
 export default GameReset
