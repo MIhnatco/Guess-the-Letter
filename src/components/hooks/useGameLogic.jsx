@@ -6,14 +6,24 @@ const NUM_GUESSES = 5;
 const NUM_ATTEMPTS = 5;
 
 /**
- * useGameLogic hook
+ * Custom hook for managing game logic 
+ * 
+ * @property {string} letter - The randomly selected target letter
+ * @property {string[]} guesses - Array of player's previous guesses
+ * @property {number} attempts - Number of remaining attempts
+ * @property {string} playerGuess - Current player's input guess
+ * @property {string} solution - The result of the game
+ * @property {boolean} isWinner - Indicates if the player has won the game
+ * @property {Function} handlePlayerChange - Updates player's guess input
+ * @property {Function} handleGuess - Player's guess validation and game management
+ * @property {Function} resetGame - Reseting the game
+ * 
+ * @returns {Object} Game state and control functions
  */
 
 function useGameLogic() {
   /**Randomly selected letter */
   const [letter, setLetter] = useState("");
-
-  console.log(letter);
 
   /**When component mounts, random letter is set */
   useEffect(() => {
