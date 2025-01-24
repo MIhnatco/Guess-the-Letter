@@ -14,7 +14,7 @@ import getHint from "../utils/getHint";
  * @param {string} props.playerGuess - The player's current guess input
  * @param {Function} props.handlePlayerChange - Function to handle player's guesses
  * @param {Function} props.handleGuess - Function to handle the submission of player's guess
- * @param {boolean} props.isDisable - Whether the input and buttons should be disabled
+ * @param {boolean} props.isDisabled - Whether the input and buttons should be disabled
  * @returns  {JSX.Element} The GameInput component
  */
 

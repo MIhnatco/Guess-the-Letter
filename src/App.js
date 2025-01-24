@@ -29,7 +29,7 @@ function App() {
     resetGame,
   } = useGameLogic();
   return (
-    <div className="App min-h-screen bg-gradient-to-br from-[#85A98F] to-[#5A6C57] md:text-2xl flex flex-col items-center justify-center text-white font-sans">
+    <div className="App min-h-screen bg-gradient-to-br from-[#85A98F] to-[#384436] md:text-2xl flex flex-col items-center justify-center text-white font-sans">
       {isWinner && <Confetti />}
 
       <GameHeader />
@@ -38,13 +38,13 @@ function App() {
         playerGuess={playerGuess}
         handlePlayerChange={handlePlayerChange}
         handleGuess={handleGuess}
-        isDisable={attempts === 0}
+        isDisabled={attempts === 0}
         letter={letter}
         setSolution={setSolution}
       />
 
       <GameBoard guesses={guesses} attempts={attempts} />
-      <GameFeedback solution={solution} />
+      <GameFeedback solution={solution} attempts={attempts} />
       <GameReset onReset={resetGame} />
     </div>
   );
