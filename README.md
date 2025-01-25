@@ -75,15 +75,15 @@ src/
 |       ├── GameHeader.jsx              // Game title and instructions
 |       ├── GameInput.jsx               // Input field and buttons
 |       ├── GameReset.jsx               // Reset button
-├── hooks/
-|       ├──useGameLogic.jsx            //Custom hook for game logic
-├── tests/
+|   ├── hooks/
+|       ├──useGameLogic.jsx             //Custom hook for game logic
+|   ├── tests/
 |       ├── GameHeader.test.jsx
-├── utils/
-|       ├── getHint.jsx                 //Providing a hint
-|       ├── randomLetter.jsx            //Generating a random letter from the alphabet
+|   ├── utils/
+|       ├── getHint.jsx                  //Providing a hint
+|       ├── randomLetter.jsx             //Generating a random letter from the alphabet
 |
-├── Button.jsx                          //Reusable button component
+|   ├── Button.jsx                       //Reusable button component
 |
 ├── App.jsx
 ├── index.css
